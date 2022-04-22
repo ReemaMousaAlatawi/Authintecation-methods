@@ -19,6 +19,7 @@
 		AE0B7B34280BB2300098947F /* FinallyVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE0B7B33280BB2300098947F /* FinallyVC.swift */; };
 		AE0B7B39280E68640098947F /* SignInWithAppleVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE0B7B38280E68640098947F /* SignInWithAppleVC.swift */; };
 		AE0B7B3C280E7D3E0098947F /* SignInWithFacebookVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE0B7B3B280E7D3E0098947F /* SignInWithFacebookVC.swift */; };
+		AEB70F28281347D600C73B7C /* Readme.md in Resources */ = {isa = PBXBuildFile; fileRef = AEB70F27281347D600C73B7C /* Readme.md */; };
 		EFE5F02AB3498A551C36FE1A /* Pods_LoginMethodsAndSignup.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9780FB3A0C8E35F8EA6EFB8 /* Pods_LoginMethodsAndSignup.framework */; };
 /* End PBXBuildFile section */
 
@@ -38,6 +39,7 @@
 		AE0B7B33280BB2300098947F /* FinallyVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinallyVC.swift; sourceTree = "<group>"; };
 		AE0B7B38280E68640098947F /* SignInWithAppleVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInWithAppleVC.swift; sourceTree = "<group>"; };
 		AE0B7B3B280E7D3E0098947F /* SignInWithFacebookVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInWithFacebookVC.swift; sourceTree = "<group>"; };
+		AEB70F27281347D600C73B7C /* Readme.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = Readme.md; sourceTree = "<group>"; };
 		D9780FB3A0C8E35F8EA6EFB8 /* Pods_LoginMethodsAndSignup.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LoginMethodsAndSignup.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB211B56501C2B35E3F849D2 /* Pods-LoginMethodsAndSignup.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LoginMethodsAndSignup.release.xcconfig"; path = "Target Support Files/Pods-LoginMethodsAndSignup/Pods-LoginMethodsAndSignup.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -68,7 +70,6 @@
 				22622A0E032327FC49B7940C /* Pods-LoginMethodsAndSignup.debug.xcconfig */,
 				DB211B56501C2B35E3F849D2 /* Pods-LoginMethodsAndSignup.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -98,6 +99,7 @@
 				AE0B7B36280BB2BF0098947F /* Support */,
 				AE0B7B22280A8F880098947F /* Assets.xcassets */,
 				AE0B7B27280A8F880098947F /* Info.plist */,
+				AEB70F27281347D600C73B7C /* Readme.md */,
 			);
 			path = LoginMethodsAndSignup;
 			sourceTree = "<group>";
@@ -196,6 +198,7 @@
 			files = (
 				AE0B7B26280A8F880098947F /* LaunchScreen.storyboard in Resources */,
 				AE0B7B23280A8F880098947F /* Assets.xcassets in Resources */,
+				AEB70F28281347D600C73B7C /* Readme.md in Resources */,
 				AE0B7B21280A8F880098947F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

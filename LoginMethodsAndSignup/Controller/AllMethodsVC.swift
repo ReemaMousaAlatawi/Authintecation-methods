@@ -32,10 +32,6 @@ class AllMethodsVC: UIViewController {
     
     
     // sign In By FaceBook
-    
-    
-    
-    
     var signInFaceBook : UIButton = {
         let signInFaceBook = UIButton()
         signInFaceBook.backgroundColor = .systemBlue
