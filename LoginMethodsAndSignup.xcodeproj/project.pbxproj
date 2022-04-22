@@ -76,6 +76,7 @@
 		AE0B7B0D280A8F880098947F = {
 			isa = PBXGroup;
 			children = (
+				AEB70F27281347D600C73B7C /* Readme.md */,
 				AE0B7B18280A8F880098947F /* LoginMethodsAndSignup */,
 				AE0B7B17280A8F880098947F /* Products */,
 				3E981301F6C1F57209A2F28A /* Pods */,
@@ -99,7 +100,6 @@
 				AE0B7B36280BB2BF0098947F /* Support */,
 				AE0B7B22280A8F880098947F /* Assets.xcassets */,
 				AE0B7B27280A8F880098947F /* Info.plist */,
-				AEB70F27281347D600C73B7C /* Readme.md */,
 			);
 			path = LoginMethodsAndSignup;
 			sourceTree = "<group>";
