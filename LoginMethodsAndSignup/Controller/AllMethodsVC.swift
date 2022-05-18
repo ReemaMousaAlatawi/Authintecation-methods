@@ -142,11 +142,11 @@ class AllMethodsVC: UIViewController {
                               action: #selector(signInFacebookPressed(_:)),
                               for: .touchUpInside)
         
-         navigationItem.leftBarButtonItem = UIBarButtonItem(title: "< Back",
+        navigationItem.leftBarButtonItem = UIBarButtonItem(title: " Dismiss",
                                                            style: .plain,
-                                                           target: self , action: #selector(Back))
+                                                           target: self , action: #selector(Dismiss))
    }
-   @objc func Back(){
+   @objc func Dismiss(){
         dismiss(animated: true, completion: nil)
    }
     

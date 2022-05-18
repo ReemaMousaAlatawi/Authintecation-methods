@@ -118,13 +118,14 @@ class SignInEMailVC: UIViewController {
         signUpButton.addTarget(self,
                                action: #selector(go),
                                for: .touchUpInside)
-         navigationItem.leftBarButtonItem = UIBarButtonItem(title: " < Back",
-                                                            style: .plain,
-                                                            target: self , action: #selector(Back))
-    }
-    @objc func Back(){
-         dismiss(animated: true, completion: nil)
-    }
+        
+        navigationItem.leftBarButtonItem = UIBarButtonItem(title: " Dismiss",
+                                                           style: .plain,
+                                                           target: self , action: #selector(Dismiss))
+   }
+   @objc func Dismiss(){
+        dismiss(animated: true, completion: nil)
+   }
     @objc func go(){
         let vc = SignUpVC()
         let navBar = UINavigationController(rootViewController: vc)

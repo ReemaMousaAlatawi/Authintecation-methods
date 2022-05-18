@@ -8,13 +8,15 @@
 import UIKit
 import FBSDKLoginKit
 
-class SignInWithFacebookVC: UIViewController , LoginButtonDelegate  {
+class SignInWithFacebookVC: UIViewController ,
+                            LoginButtonDelegate  {
     
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .white
+        
         if let token = AccessToken.current,
            !token.isExpired {
             let token = token.tokenString
@@ -38,9 +40,16 @@ class SignInWithFacebookVC: UIViewController , LoginButtonDelegate  {
             view.addSubview(loginButton)
         }
         
-    }
+        navigationItem.leftBarButtonItem = UIBarButtonItem(title: " Dismiss",
+                                                           style: .plain,
+                                                           target: self , action: #selector(Dismiss))
+   }
+   @objc func Dismiss(){
+        dismiss(animated: true, completion: nil)
+   }
     
     func loginButton(_ loginButton: FBLoginButton, didCompleteWith result: LoginManagerLoginResult?, error: Error?) {
+        
         let token = result?.token?.tokenString
         
         let request  = FBSDKLoginKit.GraphRequest(graphPath: "me",
@@ -49,9 +58,11 @@ class SignInWithFacebookVC: UIViewController , LoginButtonDelegate  {
                                                   version: nil ,
                                                   httpMethod: .get)
 
+
         request.start(completion: {conenection , result ,error in
             print("\(result)")
         })
+        
     }
     
     func loginButtonDidLogOut(_ loginButton: FBLoginButton) {
@@ -59,5 +70,3 @@ class SignInWithFacebookVC: UIViewController , LoginButtonDelegate  {
     }
     
 }
-
-
